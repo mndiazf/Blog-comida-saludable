@@ -1,0 +1,170 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Estilos para el encabezado */
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #153910;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .loguito {
+    width: 70%;
+    height: auto;
+  }
+  
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #bebcbcf6;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #bebcbcf6;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para el contenido principal */
+
+  body {
+    background-color: #E4E4D8;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #D2D2BF;
+  }
+  
+  .div-informacion {
+    width: 100%;
+  }
+  
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  aside {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #D2D2BF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el pie de página */
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos responsive */
+  
+  @media screen and (min-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+  
+    nav ul {
+      margin-left: auto;
+    }
+  
+    main {
+      padding: 2rem;
+    }
+  
+    .div-informacion {
+      width: 60%;
+    }
+  
+    aside {
+      width: 35%;
+      margin-top: 0;
+      margin-left: auto;
+      padding: 2rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+      }
+}
