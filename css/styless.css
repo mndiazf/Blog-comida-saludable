@@ -1,69 +1,64 @@
 /* Estilos generales */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem;
   background-color: black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
+
 .logo-container {
-  width: 45;
+  display: flex;
 }
 
-.loguito {
-  width: 30%;
-  height: auto;
+.logo-container img {
+  height: 6em;
+  margin-right: 10px;
 }
 
-.header-nav {
-  position: absolute;
-  right: 0;
-  padding: 1.5em;
+.header-nav nav a {
+  padding: 0.8rem;
+  font-weight: 600;
+  padding-right: 10px;
+  transition: background-color 0.3s ease;
 }
 
 nav ul {
   display: flex;
   list-style: none;
 }
-
 nav li {
   margin-right: 1rem;
 }
-
-nav a {
-  display: block;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  transition: background-color 0.3s ease;
-}
-
 nav a:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: #1b1b1b;
 }
 
 .contenedor-fondo1 {
-  height: 500px;
+  height: 650px;
   background-image: url(/assets/img/fondo1.1.jpeg);
   background-color: #333;
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center;
-  display: absolute;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  text-align: left;
+  justify-content: baseline;
 }
 
 .texto-fondo1 {
@@ -74,15 +69,16 @@ nav a:hover {
 }
 
 .texto-fondo1 h1 {
-  font-size: 4em;
+
   max-width: 500px;
-  font-size: 28px;
+  font-size: clamp(1.5em,2vw,2em);
 }
 
 .texto-fondo1 h2 {
   padding: 1em;
   max-width: 800px;
   line-height: 1.4;
+  font-size: clamp(1em,1vw,5em);
 }
 
 .contenedor-fondo2 {
@@ -115,38 +111,37 @@ nav a:hover {
 }
 
 .texto-intermedio h2 {
-  max-width: 800px;
+  max-width: 50em;
   text-align: center;
+  font-size: clamp(0.8em,1vw,2em);
 }
 
 .contactanos {
   color: #fff;
-  padding: 10em;
+  padding: 9vw;
   height: 700px;
   background-color: #1b1b1b;
   align-items: center;
   justify-content: center;
   text-align: left;
+  font-size: clamp(0.5em,1vw,1.8em);
 }
+
 #parrafocontactanos {
   max-width: 40em;
 }
 #divparrafo {
-  padding-right: 10em;
+  padding-right: 1.6vw;
 }
 
 .contact-form {
   float: right;
-  max-width: 500px;
+  width: clamp(22em,10vw,40em);
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
 }
 
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .form-group {
   margin-bottom: 20px;
@@ -185,33 +180,29 @@ button[type="submit"]:hover {
 }
 
 footer {
+  height: 7em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
   background-color: #333;
-  text-align: center;
-  padding: 10px;
 }
 
 .footer-left {
-  display: flex;
-  align-items: center;
-  margin-right: 70%;
+  flex: 1;
 }
-
 .footer-left h1 {
-  padding-left: 3em;
-  margin: 0;
+  padding-left: 2em;
+  font-size: clamp(1.9em,1vw,2em);
+  
 }
 
 .footer-right {
   display: flex;
-  align-items: center;
-  
+  padding-right: 2em;
 }
 
 .footer-right img {
+  margin-left: 5px;
   width: 50px;
-  height: 50px;
+
 }
